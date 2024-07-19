@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Inter';
-}
-
-body {
-  background-color: var(--grey-600);
-}
-
 :root {
   --grey-100: #f2f2f2;
   --grey-200: #d9d9d9;
@@ -24,4 +14,15 @@ body {
   --dark-blue: #1E6F9F;
   --red: #E25858;
 
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  color: var(--grey-100);
+}
+
+body {
+  background-color: var(--grey-600);
 }
