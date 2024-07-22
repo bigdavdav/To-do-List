@@ -1,0 +1,30 @@
+.taskContainer {
+  margin-top: 4rem;
+}
+
+.taskStatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.completedTasks {
+  color: var(--purple);
+}
+
+.createdTasks span, .completedTasks span {
+  padding: 0.5rem 0.625rem;
+
+  color: var(--grey-100);
+  font-size: 0.75rem;
+
+  background-color: var(--grey-400);
+  border-radius: 50px;
+}
