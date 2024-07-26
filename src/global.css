@@ -19,8 +19,10 @@
 * {
   margin: 0;
   box-sizing: border-box;
+
+  font-size: 0.875rem;
   font-family: 'Inter';
-  color: var(--grey-100);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

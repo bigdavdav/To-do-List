@@ -1,0 +1,33 @@
+.task {
+  padding: 16px;
+
+  background-color: var(--grey-500);
+  border: 1px solid var(--grey-400);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
+
+.task > main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.task > main p {
+  color: var(--grey-100);
+  line-height: 140%;
+}
+
+.task > main .complete {
+  color: var(--grey-300);
+  text-decoration: line-through;
+}

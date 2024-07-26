@@ -1,6 +1,6 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
-import styles from './Header.module.css'
+import styles from './Header.module.css';
 
 export function Header() {
   return (
@@ -11,5 +11,5 @@ export function Header() {
         alt="To-do text with rocket symbol next to it."
       />
     </div>
-  )
+  );
 }
