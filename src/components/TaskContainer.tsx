@@ -1,5 +1,6 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
 import { Task } from './Task';
+import { EmptyContainer } from './EmptyContainer'
+import { ChangeEvent, FormEvent, useState } from 'react';
 import { PlusCircle } from '@phosphor-icons/react';
 
 
@@ -9,7 +10,7 @@ export function TaskContainer() {
   const [textareaContent, setTextareaContent] = useState('')
   
   const [tasks, setTasks] = useState([
-    "hi",
+    "Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.",
   ])
   
   const [completedTasks, setCompletedTasks] = useState(0)
@@ -67,16 +68,7 @@ export function TaskContainer() {
       </div>
       
       <div className={styles.tasks}>
-        { tasks.map(task => {
-            return (
-              <Task 
-                key = { task }
-                content = { task }
-                deleteTask = { deleteTask }
-                completeTask = { completeTask }
-              />
-            );
-          }) }
+        <EmptyContainer />
       </div>
       
     </div>

@@ -29,15 +29,15 @@ export function Task({content, deleteTask, completeTask}:TaskProps ) {
   return (
     <div className={styles.task}>
       <main>
-        <button>
-          <Check onClick={handleCompletingAction}/>
+        <button className={completion == true ? styles.checked : styles.unchecked} onClick={handleCompletingAction}>
+          <Check size={18} weight="bold"/>
         </button>
         
         <p className={completion == true ? styles.complete : styles.incomplete}>{ content }</p>
       </main>
       
-      <button onClick={handleDeletingTask}>
-        <Trash />
+      <button className={styles.deleteButton} onClick={handleDeletingTask}>
+        <Trash size={20} />
       </button>
     </div>
   );

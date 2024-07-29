@@ -1,5 +1,5 @@
 .task {
-  padding: 16px;
+  padding: 1rem;
 
   background-color: var(--grey-500);
   border: 1px solid var(--grey-400);
@@ -24,10 +24,74 @@
 
 .task > main p {
   color: var(--grey-100);
+  font-size: 0.875rem;
   line-height: 140%;
+
+  transition: color, 0.5s;
 }
 
-.task > main .complete {
+.task > main p.complete {
   color: var(--grey-300);
   text-decoration: line-through;
+}
+
+.task button {
+  cursor: pointer;
+}
+
+.task > main button {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid var(--blue);
+  border-radius: 50px;
+  background: transparent;
+  color: transparent;
+
+  transition: background, border, 0.35s;
+}
+
+.task > main button:hover {
+  border: 3px solid var(--dark-blue);
+  background: var(--dark-blue-opacity);
+}
+
+.task > main button.checked {
+  border: 3px solid var(--dark-purple);
+  background: var(--dark-purple);
+  color: var(--grey-100);
+}
+
+.task > main button.checked:hover {
+  border: 3px solid var(--purple);
+  background: var(--purple);
+  color: var(--grey-100);
+}
+
+.task button.deleteButton {
+  height: 1.75rem;
+  width: 1.75rem;
+  padding: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+
+  color: var(--grey-300);
+
+  transition: color, background 0.2s;
+}
+
+.task button.deleteButton:hover {
+  color: var(--red);
+  background: var(--grey-400);
 }

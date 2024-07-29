@@ -12,6 +12,7 @@
   --dark-purple: #5E60CE;
   --blue: #4EA8DE;
   --dark-blue: #1E6F9F;
+  --dark-blue-opacity: rgba(30, 111, 159, 0.2);
   --red: #E25858;
 
 }
@@ -20,7 +21,6 @@
   margin: 0;
   box-sizing: border-box;
 
-  font-size: 0.875rem;
   font-family: 'Inter';
   -webkit-font-smoothing: antialiased;
 }
