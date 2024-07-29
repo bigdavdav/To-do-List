@@ -10,7 +10,7 @@ export function TaskContainer() {
   const [textareaContent, setTextareaContent] = useState('')
   
   const [tasks, setTasks] = useState([
-    "Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.",
+    'Cancel Amazon Prime Subscription'
   ])
   
   const [completedTasks, setCompletedTasks] = useState(0)
@@ -68,7 +68,17 @@ export function TaskContainer() {
       </div>
       
       <div className={styles.tasks}>
-        <EmptyContainer />
+        { tasks.length == 0 ? <EmptyContainer /> : "" }
+        { tasks.map(task => {
+          return(
+            <Task 
+              key = { task }
+              content = { task }
+              deleteTask = { deleteTask }
+              completeTask = { completeTask }
+            />
+          );
+        }) }
       </div>
       
     </div>
